@@ -1,0 +1,30 @@
+{
+    "name": "parque/seguranca",
+    "description": "Módulo de Segurança da Polícia Civil do Pará",
+    "type": "library",
+    "authors": [
+        {
+            "name": "DIME",
+            "email": "dimepolicia@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Parque\\Seguranca\\": "src/"
+        },
+        "files": [
+            "src/app/Helpers/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Parque\\Seguranca\\SegurancaServiceProvider",
+                "Parque\\Seguranca\\SegurancaRouteServiceProvider"
+            ]
+        }
+    }
+}
